@@ -2,49 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="keywords" content="twterm,twitter,client,terminal,CLI,command line">
-  <meta name="description" content="A full-featured CLI Twitter client">
+  <meta name="keywords" content="twterm,twitter,client,terminal,TUI,command line">
+  <meta name="description" content="A full-featured TUI Twitter client">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="og:image" content="http://twterm.ryota-ka.me/screenshot.png">
   <link href="http://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="./style.css">
-  <title>twterm : A full-featured CLI Twitter client</title>
+  <title>twterm : A full-featured TUI Twitter client</title>
 </head>
 <body>
   <header>
     <h1>
       twterm
-      <small>A full-featured CLI Twitter client</small>
+      <small>A full-featured TUI Twitter client</small>
       </h1>
   </header>
 
   <main>
     <section>
-      <h2>Screenshot</h2>
-      <img src="./screenshot.png" alt="screenshot" class="screenshot">
+      <img src="./screencast.gif" alt="screencast" class="screencast">
+    </section>
+
+    <section>
+      <h2>Description</h2>
+      <div class="content">
+        <p class="description">
+          <code>twterm</code> is a TUI (Text-based User Interface) Twitter client working on your terminal emulator.
+        </p>
+      </div>
     </section>
 
     <section>
       <h2>Installation</h2>
       <code class="block">
-        $ gem install twterm
+        <span class="prompt">gem install twterm</span>
       </code>
     </section>
 
     <section>
       <h2>Requirements</h2>
-      <ul>
-        <li>Ruby (compiled with C curses and Readline)</li>
-        <li>C curses</li>
-        <li>Readline</li>
-      </ul>
+      <div class="content">
+        <ul>
+          <li>Ruby (compiled with ncurses and Readline)</li>
+          <li>ncurses</li>
+          <li>Readline</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Usage</h2>
+      <code class="block">
+        <span class="prompt">twterm</span>
+      </code>
+    </section>
+
+    <section>
+      <h2>Default key assignments</h2>
+      <div class="content">
+        <p>Key assignments can be configured by editing <code>~/.twterm/keys.toml</code></p>
+        <table>
+          <tr>
+            <td class="key"><code>h</code> <code>←</code></td>
+            <td class="operation">previous tab</td>
+          </tr>
+          <tr>
+            <td class="key"><code>j</code> <code>↓</code></td>
+            <td class="operation">move down</td>
+          </tr>
+          <tr>
+            <td class="key"><code>k</code> <code>↑</code></td>
+            <td class="operation">move up</td>
+          </tr>
+          <tr>
+            <td class="key"><code>l</code> <code>→</code></td>
+            <td class="operation">next tab</td>
+          </tr>
+          <tr>
+            <td class="key"><code>^N</code></td>
+            <td class="operation">new tweet</td>
+          </tr>
+          <tr>
+            <td class="key"><code>^T</code></td>
+            <td class="operation">new tab</td>
+          </tr>
+          <tr>
+            <td class="key"><code>w</code></td>
+            <td class="operation">close current tab</td>
+          </tr>
+          <tr>
+            <td class="key"><code>F10</code> <code>^C</code></td>
+            <td class="operation">quit</td>
+          </tr>
+          <tr>
+            <td class="key"><code>F1</code></td>
+            <td class="operation">key assignments cheetsheat</td>
+          </tr>
+        </table>
+      </div>
     </section>
 
     <section>
       <h2>Links</h2>
-      <ul>
-        <li><a href="https://github.com/ryota-ka/twterm" target="_blank">GitHub</a></li>
-        <li><a href="https://rubygems.org/gems/twterm" target="_blank">RubyGems.org</a></li>
-        <li><a href="http://ryota-ka.me/" target="_blank">Ryota-ka.me</a></li>
-      </ul>
+      <div class="content">
+        <ul>
+          <li><a href="https://github.com/ryota-ka/twterm" target="_blank">GitHub</a></li>
+          <li><a href="https://rubygems.org/gems/twterm" target="_blank">RubyGems.org</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Author</h2>
+      <div class="content">
+        <a href="http://ryota-ka.me/" target="_blank">Ryota Kameoka</a>
+      </div>
     </section>
   </main>
   <script>

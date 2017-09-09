@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #222;
   font-family: Lato, sans-serif;
-  padding: 0 20px;
+  padding: 40px 20px 0;
   color: white;
   font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.4;
 }
 
 h1 {
@@ -28,15 +35,20 @@ section {
 h2 {
   font-size: 1.8rem;
   color: #f92672;
+  margin-bottom: 20px;
 }
 
 h2::before {
   content: '# ';
 }
 
-img.screenshot {
+div.content {
+  padding: 0 2rem;
+}
+
+img.screencast {
   display: block;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -47,7 +59,7 @@ code {
 
 code.block {
   display: block;
-  width: 95%;
+  max-width: 95%;
   margin: 0 auto;
   padding: 10px 20px;
   background-color: #111;
@@ -67,4 +79,29 @@ a, a:active, a:hover, a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.prompt::before {
+  content: '$ ';
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: #333;
+}
+
+td {
+  border: #666 solid 1px;
+  padding: 5px 15px;
+}
+
+td.key {
+  text-align: center;
 }
