@@ -7,9 +7,8 @@ body {
   background-color: #222;
   font-family: Lato, sans-serif;
   padding: 40px 20px 0;
-  color: white;
+  color: #fcfcfc;
   font-size: 1.1rem;
-  font-weight: 100;
   line-height: 1.4;
 }
 
@@ -29,7 +28,7 @@ header, main {
 }
 
 section {
-  margin: 50px 0;
+  margin: 3rem 0;
 }
 
 h2 {
@@ -43,7 +42,7 @@ h2::before {
 }
 
 div.content {
-  padding: 0 2rem;
+  margin: 1rem 0 2rem;
 }
 
 img.screencast {
@@ -53,20 +52,22 @@ img.screencast {
 }
 
 code {
+  background-color: #111;
+  border-radius: 4px;
   font-family: Menlo, monospace;
   font-size: 1rem;
+  padding: 3px 6px;
 }
 
 code.block {
   display: block;
-  max-width: 95%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 10px 20px;
-  background-color: #111;
 }
 
 li {
   list-style-type: none;
+  margin-bottom: 2px;
 }
 
 li::before {
@@ -87,6 +88,15 @@ p {
 
 .prompt::before {
   content: '$ ';
+  color: #999;
+}
+
+details {
+  margin-bottom: 1rem;
+}
+
+summary {
+  margin-bottom: 1rem;
 }
 
 table {
