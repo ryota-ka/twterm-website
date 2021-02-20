@@ -40,21 +40,47 @@
 
     <section>
       <h2>Installation</h2>
-      <code class="block">
-        <span class="prompt">gem install twterm</span>
-      </code>
-    </section>
 
-    <section>
-      <h2>Requirements</h2>
-      <div class="content">
+      <details>
+        <summary>❄️ Nix (Recommended)</summary>
+        <code class="block">
+          <span class="prompt">nix-env --install --file https://github.com/ryota-ka/twterm/archive/master.tar.gz</span>
+        </code>
+        <p>
+          ⚠️ If you have <code>BUNDLE_PATH</code> configured in <code>~/.bundle/config</code>, <code>twterm</code> may fail due to <code>Bundler::GemNotFound</code>.
+          See <a href="https://github.com/NixOS/nixpkgs/issues/85989" target="_blank" rel="noopener noreferrer">NixOS/nixpkgs#85989</a> for details.
+        </p>
+      </details>
+      <details>
+        <summary>🍺 Homebrew</summary>
+        <code class="block">
+          <span class="prompt">brew install ryota-ka/twterm/twterm</span>
+        </code>
+      </details>
+      <details>
+        <summary>💎 RubyGems</summary>
+        <p>
+          You have to install the following dependencies manually:
+        </p>
         <ul>
-          <li>Ruby (compiled with ncurses and Readline)</li>
-          <li>ncurses</li>
-          <li>Readline</li>
-          <li>GNU Libidn</li>
+          <li>
+            <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener noreferrer">Ruby</a>
+            (&gt;= 2.5, &lt; 3.0, compiled with ncurses and Readline)
+          </li>
+          <li>
+            <a href="https://invisible-island.net/ncurses/" target="_blank" rel="noopener noreferrer">ncurses</a>
+          </li>
+          <li>
+            <a href="https://tiswww.case.edu/php/chet/readline/rltop.html" target="_blank" rel="noopener noreferrer">GNU Readline</a>
+          </li>
+          <li>
+            <a href="https://www.gnu.org/software/libidn/" target="_blank" rel="noopener noreferrer">GNU Libidn</a>
+          </li>
         </ul>
-      </div>
+        <code class="block">
+          <span class="prompt">gem install twterm</span>
+        </code>
+      </details>
     </section>
 
     <section>
